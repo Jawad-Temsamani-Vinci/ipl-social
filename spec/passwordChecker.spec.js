@@ -1,4 +1,4 @@
-const { isPasswordLengthValid, isPasswordSpecialCharValid, isPasswordContainsNumber, isPasswordNotContainIPL } = require("../src/passwordChecker");
+const { isPasswordValid, isPasswordLengthValid, isPasswordSpecialCharValid, isPasswordContainsNumber, isPasswordNotContainIPL } = require("../src/passwordChecker");
 
 describe("Password Validation", function() {
     it("should be at least 8 characters long", function() {
@@ -32,5 +32,13 @@ describe("Password Validation", function() {
     it("should be valid if it does not contain 'ipl'", function() {
         const password = "password123";
         expect(isPasswordNotContainIPL(password)).toBe(true);
+    });
+    it("should be valid if all conditions are met", function() {
+        const password = "Valid@123";
+        expect(isPasswordValid(password)).toBe(true);
+    });
+    it("should be invalid if any condition is not met", function() {
+        const password = "short1@";
+        expect(isPasswordValid(password)).toBe(false);
     });
 });

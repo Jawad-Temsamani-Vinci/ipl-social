@@ -21,4 +21,11 @@ function isPasswordNotContainIPL(password) {
     return !/ipl/i.test(password);
 }
 
-module.exports = {isPasswordLengthValid, isPasswordSpecialCharValid, isPasswordContainsNumber, isPasswordNotContainIPL};
+function isPasswordValid(password) {
+    return isPasswordLengthValid(password) &&
+           isPasswordSpecialCharValid(password) &&
+           isPasswordContainsNumber(password) &&
+           isPasswordNotContainIPL(password);
+}
+
+module.exports = {isPasswordLengthValid, isPasswordSpecialCharValid, isPasswordContainsNumber, isPasswordNotContainIPL, isPasswordValid};
