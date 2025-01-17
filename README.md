@@ -1,17 +1,26 @@
 # IPL Social
 
-**Nom:** Temsamani
-**Prénom:** Jawad
-**Email:** jawad.temsamani@student.vinci.be
+**Nom:** Temsamani  
+**Prénom:** Jawad  
+**Email:** jawad.temsamani@student.vinci.be  
 **URL GitHub:** [https://github.com/votre-utilisateur/ipl-social](https://github.com/votre-utilisateur/ipl-social)
 
 ## Description du projet
-Le projet "IPL Social" est une application qui permet aux utilisateurs de se connecter et d'interagir autour de l'IPL (Indian Premier League). L'application est construite en utilisant JavaScript et est conçue pour être extensible et maintenable.
+Le projet sert à verifier que son mot de passe est bien conforme.
+
+## Explication du code
+Le code contient une fonction de validation de mot de passe qui vérifie les critères suivants :
+1. Le mot de passe doit contenir au moins 8 caractères.
+2. Le mot de passe doit contenir au moins un caractère spécial.
+3. Le mot de passe doit contenir au moins un chiffre.
+4. Le mot de passe ne doit pas contenir la chaîne de caractères "IPL" (quelle que soit la casse).
+
+Les tests unitaires pour cette fonction sont écrits en utilisant Jasmine et se trouvent dans le fichier `spec/passwordChecker.spec.js`.
 
 ## Exécution des tests
 Pour exécuter les tests, utilisez la commande suivante dans votre terminal :
-```
-npm test
+```bash
+npm run test
 ```
 
 ## Informations supplémentaires
