@@ -14,4 +14,8 @@ function isPasswordSpecialCharValid(password) {
     return containsSpecialChar;
 }
 
-module.exports = {isPasswordLengthValid, isPasswordSpecialCharValid};
+function isPasswordContainsNumber(password) {
+    return /\d/.test(password);
+}
+
+module.exports = {isPasswordLengthValid, isPasswordSpecialCharValid, isPasswordContainsNumber};
