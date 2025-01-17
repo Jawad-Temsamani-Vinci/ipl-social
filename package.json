@@ -1,0 +1,19 @@
+{
+  "name": "ipl-social",
+  "version": "1.0.0",
+  "description": "A project for social interactions related to IPL.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "IPL",
+    "social",
+    "interaction"
+  ],
+  "author": "Temsamani Jawad",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^5.5.0"
+  }
+}
