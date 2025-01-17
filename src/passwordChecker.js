@@ -17,5 +17,8 @@ function isPasswordSpecialCharValid(password) {
 function isPasswordContainsNumber(password) {
     return /\d/.test(password);
 }
+function isPasswordNotContainIPL(password) {
+    return !/ipl/i.test(password);
+}
 
-module.exports = {isPasswordLengthValid, isPasswordSpecialCharValid, isPasswordContainsNumber};
+module.exports = {isPasswordLengthValid, isPasswordSpecialCharValid, isPasswordContainsNumber, isPasswordNotContainIPL};
