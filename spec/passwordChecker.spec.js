@@ -1,12 +1,20 @@
-const { isPasswordValid } = require ("../src/passwordChecker");
+const { isPasswordLengthValid, isPasswordSpecialCharValid } = require("../src/passwordChecker");
 
 describe("Password Validation", function() {
     it("should be at least 8 characters long", function() {
         const password = "mypassword";
-        expect(isPasswordValid(password)).toBe(true);
+        expect(isPasswordLengthValid(password)).toBe(true);
     });
     it("should be invalid if less than 8 characters long", function() {
         const password = "short";
-        expect(isPasswordValid(password)).toBe(false);
+        expect(isPasswordLengthValid(password)).toBe(false);
+    });
+    it("should be invalid if it does not contain a special character", function() {
+        const password = "password123";
+        expect(isPasswordSpecialCharValid(password)).toBe(false);
+    });
+    it("should be valid if it contains a special character", function() {
+        const password = "password@123";
+        expect(isPasswordSpecialCharValid(password)).toBe(true);
     });
 });
