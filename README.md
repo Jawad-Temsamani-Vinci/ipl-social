@@ -3,7 +3,7 @@
 **Nom:** Temsamani  
 **Prénom:** Jawad  
 **Email:** jawad.temsamani@student.vinci.be  
-**URL GitHub:** [https://github.com/votre-utilisateur/ipl-social](https://github.com/votre-utilisateur/ipl-social)
+**URL GitHub:** https://github.com/Jawad-Temsamani-Vinci/ipl-social
 
 ## Description du projet
 Le projet sert à verifier que son mot de passe est bien conforme.
